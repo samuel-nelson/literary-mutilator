@@ -8,5 +8,9 @@ function findMyText(needle, replacement) {
 	if (replacement.length > 0) {
 		replaced = haystackText.replace(match, replacement);
 	}
-	else
+	else {
+		var boldText = "<div style=\"backgroung-color: yellow; display: inline; font-weight: bold;\">" + needle + "</div>";
+			replaced = haystackText.replace(match, boldText);
+	}
+	document.getElementById("haystack").innerHTML = replaced;
 }
