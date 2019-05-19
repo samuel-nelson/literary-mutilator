@@ -16,5 +16,9 @@ function findMyText(needle, replacement) {
 }
 
 function textColorChange() {
-	document.getElementById("text").style.color = "red";
+	document.getElementById("text").addEventListener('click', function(event) {
+			document.body.style.color = "blue";
+		}
+	);
 }
+
