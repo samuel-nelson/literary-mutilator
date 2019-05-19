@@ -9,8 +9,12 @@ function findMyText(needle, replacement) {
 		replaced = haystackText.replace(match, replacement);
 	}
 	else {
-		var boldText = "<div style=\"backgroung-color: yellow; display: inline; font-weight: bold;\">" + needle + "</div>";
-			replaced = haystackText.replace(match, boldText);
+		var boldText = "<div style=\"background-color: yellow; display: inline; font-weight: bold;\">" + needle + "</div>";
+		replaced = haystackText.replace(match, boldText);
 	}
 	document.getElementById("haystack").innerHTML = replaced;
+}
+
+function textColorChange() {
+	document.getElementById("text").style.color = "red";
 }
