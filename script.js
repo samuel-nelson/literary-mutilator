@@ -15,8 +15,8 @@ function findMyText(needle, replacement) {
 	document.getElementById("haystack").innerHTML = replaced;
 }
 
-function textColorChange() {
-	document.getElementById("text").addEventListener('click', function(event) {
+function ColorChange() {
+	document.getElementById("color").addEventListener('click', function(event) {
 			document.body.style.color = "blue";
 		}
 	);
